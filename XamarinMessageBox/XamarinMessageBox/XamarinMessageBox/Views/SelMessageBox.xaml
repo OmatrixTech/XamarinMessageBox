@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinMessageBox.Views.SelMessageBox">
+    <ContentView.Content>
+        <Frame x:Name="ButtonMenuWrapper"                         
+ HasShadow="False" 
+ BackgroundColor="Transparent"
+ IsClippedToBounds="True" 
+ CornerRadius="20" 
+ Padding="0" 
+ HorizontalOptions="Center" 
+ VerticalOptions="Center">
+            <Grid  WidthRequest="300" HeightRequest="250"  x:Name="MainGrid"
+  Padding="10"
+  HorizontalOptions="CenterAndExpand" 
+  VerticalOptions="CenterAndExpand" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="2"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="MessageTitleLabel" Text="Demo"  LineBreakMode="WordWrap"  TextColor="Black" HorizontalOptions="CenterAndExpand"  VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" FontSize="16"/>
+                <StackLayout  Grid.Row="1" VerticalOptions="FillAndExpand">
+                    <Label x:Name="MessageTextLabel" Text="This is a sample message box"  LineBreakMode="WordWrap" Padding="2" HorizontalTextAlignment="Center"  TextColor="Black" HorizontalOptions="CenterAndExpand"  VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" FontSize="16"/>
+                </StackLayout>
+                <StackLayout Margin="0,22,0,0" Grid.Row="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Button x:Name="OkButton"  Grid.Column="2"  FontSize="16" HorizontalOptions="CenterAndExpand" 
+           VerticalOptions="CenterAndExpand" 
+           BorderColor="#871f26"  
+           BackgroundColor="#df4b55"  
+           TextColor="Black"  
+           CornerRadius="25"  
+           BorderWidth="4" 
+           WidthRequest="140"
+           Margin="15,0,0,0" Text="Ok" Command="{Binding CloseSelfPopupCommand}"/>
+                </StackLayout>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
