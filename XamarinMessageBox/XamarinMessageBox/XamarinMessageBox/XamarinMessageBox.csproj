@@ -8,14 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Xamarin.Custom.MessageBox" Version="1.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Xamarin.Custom.MessageBox">
-      <HintPath>..\..\..\..\Xamarin.Custom.MessageBox\Xamarin.Custom.MessageBox\bin\Debug\netstandard2.1\Xamarin.Custom.MessageBox.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>

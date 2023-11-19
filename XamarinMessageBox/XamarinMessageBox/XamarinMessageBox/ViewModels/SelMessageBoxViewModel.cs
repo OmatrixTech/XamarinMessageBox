@@ -19,7 +19,7 @@ namespace XamarinMessageBox.ViewModels
 
         private void OpenSelfModalMessageBox()
         {
-            //Dependency INjection service
+            //Dependency Injection service
             modalMessageBoxServiceHandler.HideSelfCreatedMessageBox();
 
             //Without instance method

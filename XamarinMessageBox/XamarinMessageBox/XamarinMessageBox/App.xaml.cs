@@ -17,11 +17,13 @@ namespace XamarinMessageBox
            //Register modal popup setup
            ModalMessageBoxConfigurationSetup.SetupModalMessageBox(
            customMessageBoxTextColor: Color.White,
-           customMessageBoxHeightRequest: 450,
-           customMessageBoxWidthRequest: 400,
+           customMessageBoxHeightRequest: 550,
+           customMessageBoxWidthRequest: 330,
            customMessageBoxBackgroundColor: Color.FromHex("#000000"),
-           customMessageBoxTitlePosition: LayoutOptions.CenterAndExpand,
-           customMessageBoxButtonBackgroundColor: Color.FromHex("#0000FF"));
+           customMessageBoxTitlePosition: LayoutOptions.EndAndExpand,
+           customMessageBoxButtonBackgroundColor: Color.FromHex("#FFFFFF"),
+           CustomMessageBoxButtonTextColor:Color.FromHex("#000000")
+           );
             // Initialize and configure services
             var serviceCollection = new ServiceCollection();
             ConfigureServices(serviceCollection);
